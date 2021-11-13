@@ -1,7 +1,7 @@
 import numpy as np
 
 def sigmoid(a1):
-    return 1 / (1 + np.exp(a1))
+    return 1 / (1 + np.exp(-a1))
 
 def identity_function(x): #항등함수
     return x
