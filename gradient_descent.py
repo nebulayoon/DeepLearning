@@ -18,7 +18,7 @@ def numerical_gradient(f, x):
   return grad
 
 
-def gradient_descent(f, init_x, lr=0.01, step_num=100):
+def gradient_descent(f, init_x, lr=0.01, step_num=100): # learning rate(학습률)은 중요
   x = init_x
   
   for i in range(step_num):
