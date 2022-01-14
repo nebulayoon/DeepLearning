@@ -1,4 +1,5 @@
 # 이 프로젝트에서는 앞으로의 신경망 공부에서 사용될 여러 계층들을 구현할 예정임
+from functools import lru_cache
 import numpy as np
 
 def softmax(a):
@@ -90,3 +91,11 @@ class SoftmaxWithLoss:
     dx = (self.y - self.t) / batch_size
 
     return dx
+
+class SGD:
+  def __init__(self, lr=0.01):
+    self.lr = lr
+
+  def update(self, params, grads):
+    for key in params.keys():
+      params[key] -= self.lr * grads[key]
