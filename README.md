@@ -4,4 +4,4 @@
 연쇄법칙(chain rule)
 
 
-1/14 kaggle
+1/14 kaggle 데이터 셋 이용해서 프로젝트 진행
