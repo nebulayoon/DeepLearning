@@ -6,3 +6,4 @@
 
 1/14 kaggle 데이터 셋 이용해서 프로젝트 진행
 deaplearning 책 완독
+EDA 진행
